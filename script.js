@@ -19,6 +19,11 @@ function createPassword() {
         password += allChars[Math.floor(Math.random() * allChars.length)];
     }
     passwordBox.value = password;
-}
 
-    
+    passwordBox.select();
+    document.execCommand("copy");
+}
+function copyPassword() {
+    passwordBox.select();
+    document.execCommand("copy");
+}
